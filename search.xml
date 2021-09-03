@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Win10搭建hadoop开发环境</title>
+      <link href="/TechBlog/2021/07/26/hadoop/"/>
+      <url>/TechBlog/2021/07/26/hadoop/</url>
+      
+        <content type="html"><![CDATA[<p>###1.环境准备<br>下载安装JDK8 window版本：<a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html#license-lightbox">jdk-8u241-windows-x64.exe</a></p><p>安装、配置jdk环境变量。</p><p>###2.下载hadoop<br>hadoop下载链接：<a href="https://hadoop.apache.org/release/3.1.0.html">hadoop-3.1.0</a><br>下载winutils，Windows安装hadoop需要这部分文件，链接：<a href="https://github.com/steveloughran/winutils">steveloughran/winutils</a> ，找到3.0版本，或者cdarlint/winutils 找到 3.2.0，下载bin目录的文件，放入/替换 C:\hadoop\bin 文件夹内的文件，特别是要放入hadoop.dll和winutils.exe文件，并复制一份hadoop.dll放到C:\Windows\System32下。</p><p>配置hadoop环境变量，把C:\hadoop添加到HADOOP_HOME，并在Path添加 %HADOOP_HOME%\bin 和 %HADOOP_HOME%\sbin 。</p><p>打开CMD，输入hadoop version 测试是否正常显示版本信息。</p><p>###3.配置hadoop</p><p>切换到hadoop安装路径下。</p><p>####3.1修改core-site.xml</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 大数据 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hadoop </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Postgre SQL</title>
       <link href="/TechBlog/2021/07/13/postgre-sql/"/>
       <url>/TechBlog/2021/07/13/postgre-sql/</url>
